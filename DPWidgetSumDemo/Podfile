@@ -1,0 +1,46 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+
+#消除cocoapods的警告
+inhibit_all_warnings!
+
+target 'DPWidgetSumDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DPWidgetSumDemo
+
+  target 'DPWidgetSumDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'DPWidgetSumDemoUITests' do
+    # Pods for testing
+  end
+
+  # 响应链
+  pod 'ReactiveObjC', '~> 3.1.1'
+  # 加载进度
+  pod 'MBProgressHUD'
+  # 富文本label
+  pod 'TTTAttributedLabel', '~> 2.0.0'
+  # 图片下载
+  pod 'SDWebImage','3.8.2'
+  # JS桥接文件
+  pod 'WebViewJavascriptBridge', '~> 6.0.3'
+  # SBJson解析
+  pod 'SBJson', '~> 5.0.0'
+  # 网络请求
+  pod 'AFNetworking'
+  # UM
+  pod 'UMCommon'
+  pod 'UMDevice'
+  pod 'UMAPM'
+  # U-Share SDK UI模块（分享面板，建议添加）
+  pod 'UMShare/UI'
+  #集成微信(完整版14.4M)
+  pod 'UMShare/Social/WeChat'
+end

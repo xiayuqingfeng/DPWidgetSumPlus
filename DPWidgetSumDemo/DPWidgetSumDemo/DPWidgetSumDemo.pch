@@ -1,0 +1,16 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#define DP_ZCWAlertViewBtn @{@"bgColor":DP_RGBA(255, 255, 255, 1),@"font":DP_FontBold(16),@"titleColor":DP_RGBA(51, 105, 227, 1)}
+#define DP_ZCWAlertViewBtnOther @{@"bgColor":DP_RGBA(255, 255, 255, 1),@"font":DP_FontBold(16),@"titleColor":DP_RGBA(0, 255, 255, 1)}
+#endif
