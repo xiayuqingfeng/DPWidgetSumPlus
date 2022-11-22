@@ -1,0 +1,6 @@
+framework module Pods_DPWidgetSumDemo {
+  umbrella header "Pods-DPWidgetSumDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

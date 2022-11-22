@@ -1,0 +1,85 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - MBProgressHUD (1.2.0)
+  - ReactiveObjC (3.1.1)
+  - SBJson (5.0.3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - TTTAttributedLabel (2.0.0)
+  - UMAPM (1.4.2)
+  - UMCommon (7.3.5):
+    - UMDevice
+  - UMDevice (2.0.5)
+  - UMShare/Core (6.10.3):
+    - UMCommon
+  - UMShare/Social/ReducedWeChat (6.10.3):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/WeChat (6.10.3):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedWeChat
+  - UMShare/UI (6.10.3):
+    - UMCommon
+    - UMShare/Core
+  - WebViewJavascriptBridge (6.0.3)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MBProgressHUD
+  - ReactiveObjC (~> 3.1.1)
+  - SBJson (~> 5.0.0)
+  - SDWebImage (= 3.8.2)
+  - TTTAttributedLabel (~> 2.0.0)
+  - UMAPM
+  - UMCommon
+  - UMDevice
+  - UMShare/Social/WeChat
+  - UMShare/UI
+  - WebViewJavascriptBridge (~> 6.0.3)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - MBProgressHUD
+    - ReactiveObjC
+    - SBJson
+    - SDWebImage
+    - TTTAttributedLabel
+    - UMAPM
+    - UMCommon
+    - UMDevice
+    - UMShare
+    - WebViewJavascriptBridge
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SBJson: 31813d1508edec904663cd59e71e0225d9dd8e07
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UMAPM: 9766611aba84e0755afc785d4399f1e9fbb0a475
+  UMCommon: ab4d875ddefe1b06c60b577e4a58bc4d433ee067
+  UMDevice: c13bbb2e8ca6c67d1e23e03162553e3ec5a8b5b0
+  UMShare: a3f9cb2d3ece67edd2c58331bd89bfffb289782b
+  WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
+
+PODFILE CHECKSUM: 55ae01f042e10d8c59ae3ab531daee99e12476ff
+
+COCOAPODS: 1.11.2
