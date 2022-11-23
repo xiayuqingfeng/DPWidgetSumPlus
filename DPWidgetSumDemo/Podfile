@@ -35,12 +35,4 @@ target 'DPWidgetSumDemo' do
   pod 'SBJson', '~> 5.0.0'
   # 网络请求
   pod 'AFNetworking'
-  # UM
-  pod 'UMCommon'
-  pod 'UMDevice'
-  pod 'UMAPM'
-  # U-Share SDK UI模块（分享面板，建议添加）
-  pod 'UMShare/UI'
-  #集成微信(完整版14.4M)
-  pod 'UMShare/Social/WeChat'
 end

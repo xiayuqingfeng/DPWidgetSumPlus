@@ -29,8 +29,6 @@
 @property (nonatomic, strong) UIButton *setBtn;
 ///"文字大小设置、屏幕亮度设置"弹框
 @property (nonatomic, strong) UIView *corverView;
-/////"分享"弹框
-//@property (nonatomic, strong) DPShareView *shareView;
 
 ///初始网址
 @property (nonatomic, strong) NSString *originalUrl;
@@ -208,25 +206,18 @@
     [self createWebView];
 }
 - (void)rigthBtns:(UIButton*)btn{
-//    if (btn.tag == 100) {
-//        if (_corverView.superview == nil) {
-//            [_shareView removeFromSuperview];
-//            _corverView = [self createBrightnessView];
-//        }else{
-//            [_corverView removeFromSuperview];
-//        }
-//    }else if (btn.tag == 101) {
-//        if (_shareView.superview == nil) {
-//            [_corverView removeFromSuperview];
-//            [self umShareViewSelecter];
-//        }else{
-//            [_shareView removeFromSuperview];
-//        }
-//    }else if (btn.tag == 102) {
-//        [_corverView removeFromSuperview];
-//        [_shareView removeFromSuperview];
-//        [_currentWebView reload];
-//    }
+    if (btn.tag == 100) {
+        if (_corverView.superview == nil) {
+            _corverView = [self createBrightnessView];
+        }else{
+            [_corverView removeFromSuperview];
+        }
+    }else if (btn.tag == 101) {
+        [_corverView removeFromSuperview];
+    }else if (btn.tag == 102) {
+        [_corverView removeFromSuperview];
+        [_currentWebView reload];
+    }
 }
 
 #pragma mark <--------------基类函数-------------->
@@ -913,13 +904,7 @@
 
 #pragma mark <--------------ShareView-------------->
 - (void)umShareViewSelecter{
-//    DPShareDataObject *shareObject = [[DPShareDataObject alloc]init];
-//    shareObject.image = [UIImage imageNamed:@"shareImage.png"];
-//    shareObject.title = @"有球有料";
-//    shareObject.text = @"赛程赛果实时更新；赛事情报轻松获悉，来这里有球更有料！";
-//    shareObject.url = Key(@"YQBC2000094", @"http://yqyl.caiminbang1.com");
-//    ShareViewContentType aShareContentType = DPShareContentTypeDefault;
-//    _shareView = [DPShareView createShareView:self.view shareDataObject:shareObject contentType:aShareContentType currentVc:nil platformBack:nil callBack:nil];
+
 }
 @end
 

@@ -49,26 +49,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>UMAPM.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UMCommon.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UMDevice.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>UMShare.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>WebViewJavascriptBridge.xcscheme</key>
 		<dict>
 			<key>isShown</key>

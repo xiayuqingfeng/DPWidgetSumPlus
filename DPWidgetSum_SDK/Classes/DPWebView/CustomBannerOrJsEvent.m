@@ -9,7 +9,6 @@
 #import "CustomBannerOrJsEvent.h"
 #import "DPWidgetSum.h"
 #import "SBJson5.h"
-#import "DPShareView.h"
 #import "DPAppEventObject.h"
 #import "AFNetworking.h"
 
@@ -232,61 +231,6 @@
         self.shareType = dp_notEmptyStr([array dp_objectAtIndex:4]);
         self.moreSelectType = dp_notEmptyStr([array dp_objectAtIndex:5]);
         self.imageData = dp_notEmptyStr([array dp_objectAtIndex:6]);
-
-        ShareViewContentType aShareContentType = DPShareContentTypeDefault;
-        if ([self.shareType isEqualToString:@"0"]) {
-            aShareContentType = DPShareContentTypeImage;
-        }else if ([self.shareType isEqualToString:@"1"]) {
-            aShareContentType = DPShareContentTypeDefault;
-        }else if ([self.shareType isEqualToString:@"2"]) {
-            [self shareTypeExtensionFunction];
-        }
-
-        DPShareDataObject *shareObject = [[DPShareDataObject alloc]init];
-        shareObject.title = self.shareTitle;
-        shareObject.text = self.shareContent;
-        shareObject.url = self.shareUrl;
-        shareObject.sinaText = [self.shareContent stringByAppendingString:self.shareUrl];
-        shareObject.moreSelectType = self.moreSelectType;
-        if (self.imageData.length > 0) {
-            if ([self.imageData isEqualToString:@"1"]) {
-                shareObject.image = [UIImage dp_captureScreenView:_tempWebView];
-            }else{
-                NSData *currentImageData = [[NSData alloc] initWithBase64EncodedString:self.imageData options:NSDataBase64DecodingIgnoreUnknownCharacters];
-                shareObject.image = [UIImage imageWithData:currentImageData];
-                shareObject.image = shareObject.image!=nil?shareObject.image:[UIImage imageNamed:@"shareImage.png"];
-            }
-        }else {
-            shareObject.image = self.imageUrl.length?self.imageUrl:[UIImage imageNamed:@"shareImage.png"];
-        }
-
-        UIView *superView = _tempNav.topViewController.view;
-        if (_tempBaseVc != nil) {
-            if ([_tempBaseVc isKindOfClass:[DPBaseViewController class]] && ((DPBaseViewController *)_tempBaseVc).contentView != nil) {
-                superView = ((DPBaseViewController *)_tempBaseVc).contentView;
-            }else{
-                superView = _tempBaseVc.view;
-            }
-        }
-        dp_arc_block(self);
-        [DPShareView createShareView:superView shareDataObject:shareObject contentType:aShareContentType currentVc:nil platformBack:^BOOL(DPShareView *aObject, DPSharePlatformType platformType) {
-            if (weak_self.tempWebView) {
-                NSString *javascriptCommand = [NSString stringWithFormat:@"zcw_sharePlatformBack('%ld')",(long)platformType];
-                [weak_self.tempWebView evaluateJavaScript:javascriptCommand completionHandler:nil];
-            }
-            return YES;
-        }  callBack:^(DPShareView *aObject, DPSharePlatformType platformType, id data, NSError *error) {
-            if(error == nil){
-                if (weak_self.tempWebView) {
-                    NSString* javascriptCommand = [NSString stringWithFormat:@"fcggl_sharecallback()"];
-                    [weak_self.tempWebView evaluateJavaScript:javascriptCommand completionHandler:nil];
-
-                    [DPTool showToastMsg:@"分享成功"];
-                }
-            }else {
-                [DPShareContent shareErrorAlert:error.code];
-            }
-        }];
     }else if ([type isEqualToString:@"getNetwork"]) {
         //获取手机网络环境
         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {

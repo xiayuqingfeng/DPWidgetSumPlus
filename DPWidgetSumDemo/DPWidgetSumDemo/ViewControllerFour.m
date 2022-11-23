@@ -10,7 +10,6 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import "DPWidgetSum.h"
 #import "DPDefaultView.h"
-#import "DPShareView.h"
 
 @interface ViewControllerFour () {
 
@@ -31,19 +30,6 @@
 //        [weak_self showDefaulWithSuperView:nil useType:1 dataCount:0 btnBlock:^(DPDefaultView *aObject, NSInteger selectIndex) {
 //            [aObject hiddenDefaulTSuperView];
 //        }];
-        
-        DPShareDataObject *shareObject = [[DPShareDataObject alloc]init];
-        shareObject.title = @"asdfasdf";
-        shareObject.text = @"asdfasdf";
-        shareObject.url = @"asdfasdf";
-        shareObject.sinaText = @"asdfasdf";
-        shareObject.moreSelectType = @"123456";
-        
-        [DPShareView createShareView:self.contentView shareDataObject:shareObject contentType:DPShareContentTypeDefault currentVc:nil platformBack:^BOOL(DPShareView *aObject, DPSharePlatformType platformType) {
-            return YES;
-        }  callBack:^(DPShareView *aObject, DPSharePlatformType platformType, id data, NSError *error) {
-           
-        }];
     }];
     [self.contentView addSubview:defaultBtn];;
 }

@@ -94,9 +94,6 @@
 		FDBF048126A9527700D9456F /* icon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDBF048026A9527700D9456F /* icon_selected@2x.png */; };
 		FDBF048426A95C8600D9456F /* ViewControllerSeven.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBF048226A95C8600D9456F /* ViewControllerSeven.m */; };
 		FDD202682717E3E5009B00B4 /* DPAppEventObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD202672717E3E5009B00B4 /* DPAppEventObject.m */; };
-		FDD202702717ED6D009B00B4 /* DPShareBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2026A2717ED6D009B00B4 /* DPShareBtn.m */; };
-		FDD202712717ED6D009B00B4 /* DPShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2026C2717ED6D009B00B4 /* DPShareView.m */; };
-		FDD202722717ED6D009B00B4 /* DPShareContent.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2026F2717ED6D009B00B4 /* DPShareContent.m */; };
 		FDD2027C27181C99009B00B4 /* DPAlertLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2027927181C98009B00B4 /* DPAlertLoadingView.m */; };
 		FDDDEF71266DABDE0041D66C /* psc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FDDDEF70266DABDE0041D66C /* psc.jpeg */; };
 /* End PBXBuildFile section */
@@ -243,7 +240,7 @@
 		FD02245E27166CE300B4CB44 /* DPMessageAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMessageAlertView.h; sourceTree = "<group>"; };
 		FD02245F27166CE300B4CB44 /* DPMessageAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMessageAlertView.m; sourceTree = "<group>"; };
 		FD02246127166CE300B4CB44 /* DPResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DPResources.bundle; sourceTree = "<group>"; };
-		FD02249A27166D3D00B4CB44 /* DPWidgetSum.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DPWidgetSum.podspec; path = ../../DPWidgetSum.podspec; sourceTree = "<group>"; };
+		FD02249A27166D3D00B4CB44 /* DPWidgetSum.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = DPWidgetSum.podspec; path = ../DPWidgetSum.podspec; sourceTree = "<group>"; };
 		FD2EAFA526FAD0E30041651F /* AppDelegate+DPCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+DPCustom.m"; sourceTree = "<group>"; };
 		FD2EAFA626FAD0E30041651F /* AppDelegate+DPCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+DPCustom.h"; sourceTree = "<group>"; };
 		FD3306F026AA87EE00873687 /* default_logo1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "default_logo1@2x.jpg"; sourceTree = "<group>"; };
@@ -289,12 +286,6 @@
 		FDBF048326A95C8600D9456F /* ViewControllerSeven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerSeven.h; sourceTree = "<group>"; };
 		FDD202662717E3E4009B00B4 /* DPAppEventObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppEventObject.h; sourceTree = "<group>"; };
 		FDD202672717E3E5009B00B4 /* DPAppEventObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppEventObject.m; sourceTree = "<group>"; };
-		FDD2026A2717ED6D009B00B4 /* DPShareBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShareBtn.m; sourceTree = "<group>"; };
-		FDD2026B2717ED6D009B00B4 /* DPShareContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShareContent.h; sourceTree = "<group>"; };
-		FDD2026C2717ED6D009B00B4 /* DPShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShareView.m; sourceTree = "<group>"; };
-		FDD2026D2717ED6D009B00B4 /* DPShareBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShareBtn.h; sourceTree = "<group>"; };
-		FDD2026E2717ED6D009B00B4 /* DPShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPShareView.h; sourceTree = "<group>"; };
-		FDD2026F2717ED6D009B00B4 /* DPShareContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPShareContent.m; sourceTree = "<group>"; };
 		FDD2027927181C98009B00B4 /* DPAlertLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAlertLoadingView.m; sourceTree = "<group>"; };
 		FDD2027B27181C98009B00B4 /* DPAlertLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAlertLoadingView.h; sourceTree = "<group>"; };
 		FDDDEF70266DABDE0041D66C /* psc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = psc.jpeg; sourceTree = "<group>"; };
@@ -366,7 +357,6 @@
 			children = (
 				FD0223F027166CE200B4CB44 /* DPWidgetSum.h */,
 				FDD2027827181C98009B00B4 /* DPAlertLoadingView */,
-				FDD202692717ED6D009B00B4 /* DPShareContent */,
 				FDD202652717E3D2009B00B4 /* AppEvent */,
 				FD0223DA27166CE200B4CB44 /* DPBase */,
 				FD0223E727166CE200B4CB44 /* DPTabMenuBar */,
@@ -669,6 +659,7 @@
 		FD3A506E217815A500E17385 = {
 			isa = PBXGroup;
 			children = (
+				FD02249A27166D3D00B4CB44 /* DPWidgetSum.podspec */,
 				FD3A5079217815A500E17385 /* DPWidgetSumDemo */,
 				FD3A509D217815A700E17385 /* DPWidgetSumDemoUITests */,
 				FD3A5078217815A500E17385 /* Products */,
@@ -690,7 +681,6 @@
 		FD3A5079217815A500E17385 /* DPWidgetSumDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FD02249A27166D3D00B4CB44 /* DPWidgetSum.podspec */,
 				FD3A507A217815A500E17385 /* AppDelegate.h */,
 				FD3A507B217815A500E17385 /* AppDelegate.m */,
 				FD2EAFA626FAD0E30041651F /* AppDelegate+DPCustom.h */,
@@ -764,19 +754,6 @@
 			path = AppEvent;
 			sourceTree = "<group>";
 		};
-		FDD202692717ED6D009B00B4 /* DPShareContent */ = {
-			isa = PBXGroup;
-			children = (
-				FDD2026D2717ED6D009B00B4 /* DPShareBtn.h */,
-				FDD2026A2717ED6D009B00B4 /* DPShareBtn.m */,
-				FDD2026B2717ED6D009B00B4 /* DPShareContent.h */,
-				FDD2026F2717ED6D009B00B4 /* DPShareContent.m */,
-				FDD2026E2717ED6D009B00B4 /* DPShareView.h */,
-				FDD2026C2717ED6D009B00B4 /* DPShareView.m */,
-			);
-			path = DPShareContent;
-			sourceTree = "<group>";
-		};
 		FDD2027827181C98009B00B4 /* DPAlertLoadingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -798,7 +775,6 @@
 				FD3A5074217815A500E17385 /* Frameworks */,
 				FD3A5075217815A500E17385 /* Resources */,
 				49B9B2A0F50A1BE901FC87A3 /* [CP] Embed Pods Frameworks */,
-				7C69CBD3CE7F47589603E153 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -837,7 +813,6 @@
 				FD3A5097217815A700E17385 /* Frameworks */,
 				FD3A5098217815A700E17385 /* Resources */,
 				0C1F34205D5EF5149BA7542B /* [CP] Embed Pods Frameworks */,
-				A241DD799100FABE4B57A18C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1032,40 +1007,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo/Pods-DPWidgetSumDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C69CBD3CE7F47589603E153 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo/Pods-DPWidgetSumDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo/Pods-DPWidgetSumDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo/Pods-DPWidgetSumDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A241DD799100FABE4B57A18C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo-DPWidgetSumDemoUITests/Pods-DPWidgetSumDemo-DPWidgetSumDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo-DPWidgetSumDemoUITests/Pods-DPWidgetSumDemo-DPWidgetSumDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DPWidgetSumDemo-DPWidgetSumDemoUITests/Pods-DPWidgetSumDemo-DPWidgetSumDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1098,7 +1039,6 @@
 				FDA0169526A6B908006224A9 /* ViewControllerThree.m in Sources */,
 				FD02247D27166CE300B4CB44 /* DPSharedManager.m in Sources */,
 				FD02246B27166CE300B4CB44 /* DPTabMenuButton.m in Sources */,
-				FDD202712717ED6D009B00B4 /* DPShareView.m in Sources */,
 				FD02249127166CE300B4CB44 /* DPTimeAlertPickerView.m in Sources */,
 				FD02246427166CE300B4CB44 /* DPUIBaseViewController.m in Sources */,
 				FDD2027C27181C99009B00B4 /* DPAlertLoadingView.m in Sources */,
@@ -1107,7 +1047,6 @@
 				FD02246C27166CE300B4CB44 /* NSDate+DPCategory.m in Sources */,
 				FD02247727166CE300B4CB44 /* NSUserDefaults+DPCategory.m in Sources */,
 				FD02249327166CE300B4CB44 /* DPImagePickerAlertView.m in Sources */,
-				FDD202702717ED6D009B00B4 /* DPShareBtn.m in Sources */,
 				FD02248827166CE300B4CB44 /* DPTextInputTool.m in Sources */,
 				FDBF048426A95C8600D9456F /* ViewControllerSeven.m in Sources */,
 				FD02247F27166CE300B4CB44 /* DPBannerAlertView.m in Sources */,
@@ -1125,7 +1064,6 @@
 				FD02246A27166CE300B4CB44 /* DPTabMenuBarAttribute.m in Sources */,
 				FD02246D27166CE300B4CB44 /* UIColor+DPCategory.m in Sources */,
 				FD02247C27166CE300B4CB44 /* UIFont+DPCategory.m in Sources */,
-				FDD202722717ED6D009B00B4 /* DPShareContent.m in Sources */,
 				FD02247127166CE300B4CB44 /* UIImage+DPCategory.m in Sources */,
 				FD02247427166CE300B4CB44 /* NSArray+DPCategory.m in Sources */,
 				FD02246527166CE300B4CB44 /* DPTabBarItemButton.m in Sources */,
