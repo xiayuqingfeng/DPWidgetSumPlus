@@ -6,7 +6,7 @@ s.ios.deployment_target = '8.0'
 s.summary       = 'A delightful setting interface framework.'
 s.homepage      = 'https://github.com/xiayuqingfeng/DPWidgetSum'
 s.license       = { :type => 'MIT', :file => 'LICENSE' }
-s.author        = { '涂鸦' => '13673677305@163.com' }
+s.author        = { '江湖两两把刀' => 'xia18101310780@163.com' }
 s.source        = { :git => 'https://github.com/xiayuqingfeng/DPWidgetSum.git', :tag => s.version }
 s.source_files  = 'DPWidgetSum_SDK/Classes/**/*.{h,m}'
 s.resource_bundles = { 'DPWidgetSumBubdle' => ['DPWidgetSum_SDK/Assets/DPResources.bundle'] }
