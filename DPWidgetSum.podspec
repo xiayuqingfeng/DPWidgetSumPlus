@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name          = 'DPWidgetSum'
-s.version       = '2.6.4'
+s.version       = '2.6.5'
 s.ios.deployment_target = '8.0'
 s.summary       = 'A delightful setting interface framework.'
 s.homepage      = 'https://github.com/xiayuqingfeng/DPWidgetSum'
